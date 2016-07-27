@@ -1,0 +1,46 @@
+Partlist
+
+Exported from simple-hat.sch at 16/07/28 6:19
+
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+Assembly variant: 
+
+Part     Value          Device          Package      Library     Sheet
+
+C1       0.1            C-EU050-025X075 C050-025X075 resistor    1
+JP1      FAN            PINHD-1X2       1X02         pinhead     1
+LED1     USER1          LED3MM          LED3MM       led         1
+LED2     USER2          LED3MM          LED3MM       led         1
+LED3     USER3          LED3MM          LED3MM       led         1
+R1       270            R-US_0207/7     0207/7       resistor    1
+R2       270            R-US_0207/7     0207/7       resistor    1
+R3       270            R-US_0207/7     0207/7       resistor    1
+R4       1k             R-US_0207/7     0207/7       resistor    1
+R5       1k             R-US_0207/7     0207/7       resistor    1
+R6       1k             R-US_0207/7     0207/7       resistor    1
+R7       10k            R-US_0207/7     0207/7       resistor    1
+R8       10k            R-US_0207/7     0207/7       resistor    1
+R9       10k            R-US_0207/7     0207/7       resistor    1
+R10      1k             R-US_0207/7     0207/7       resistor    1
+R11      1k             R-US_0207/7     0207/7       resistor    1
+R12      1k             R-US_0207/7     0207/7       resistor    1
+R13      1k             R-US_0207/7     0207/7       resistor    1
+R14      1k             R-US_0207/7     0207/7       resistor    1
+R15      10k            R-US_0207/7     0207/7       resistor    1
+R16      10k            R-US_0207/7     0207/7       resistor    1
+R17      10k            R-US_0207/7     0207/7       resistor    1
+R18      10k            R-US_0207/7     0207/7       resistor    1
+R19      10k            R-US_0207/7     0207/7       resistor    1
+R20      20k            TRIM_US-B25P    B25P         pot         1
+S1       DTS-6          DTS-6           DTS-6        switch-tact 1
+S2       DTS-6          DTS-6           DTS-6        switch-tact 1
+S3       DTS-6          DTS-6           DTS-6        switch-tact 1
+SV1      GPIO           MA20-2          MA20-2       con-lstb    1
+SV2      I2C_1          MA04-1          MA04-1       con-lstb    1
+SV3      I2C_2          MA04-1          MA04-1       con-lstb    1
+SV4      UART           MA03-1          MA03-1       con-lstb    1
+SV5      I2C_3          MA04-1          MA04-1       con-lstb    1
+SV6      I2C_4          MA04-1          MA04-1       con-lstb    1
+SV7      LCD            MA07-2          MA07-2       con-lstb    1
+SW1      USER4          SW_DIP-5        EDG-05       special     1

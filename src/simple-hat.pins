@@ -1,0 +1,190 @@
+Pinlist
+
+Exported from simple-hat.sch at 16/07/28 6:19
+
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
+C1       1        1          pas      +5V_04
+         2        2          pas      GND
+
+JP1      1        1          pas      +5V_02
+         2        2          pas      GND
+
+LED1     A        A          pas      GPIO17
+         K        C          pas      N$1
+
+LED2     A        A          pas      GPIO27
+         K        C          pas      N$2
+
+LED3     A        A          pas      GPIO22
+         K        C          pas      N$3
+
+R1       1        1          pas      GND
+         2        2          pas      N$1
+
+R2       1        1          pas      GND
+         2        2          pas      N$2
+
+R3       1        1          pas      GND
+         2        2          pas      N$3
+
+R4       1        1          pas      GPIO10
+         2        2          pas      N$8
+
+R5       1        1          pas      GPIO9
+         2        2          pas      N$9
+
+R6       1        1          pas      GPIO11
+         2        2          pas      N$10
+
+R7       1        1          pas      GND
+         2        2          pas      GPIO10
+
+R8       1        1          pas      GND
+         2        2          pas      GPIO9
+
+R9       1        1          pas      GND
+         2        2          pas      GPIO11
+
+R10      1        1          pas      GPIO5
+         2        2          pas      N$15
+
+R11      1        1          pas      GPIO6
+         2        2          pas      N$13
+
+R12      1        1          pas      GPIO13
+         2        2          pas      N$14
+
+R13      1        1          pas      GPIO19
+         2        2          pas      N$18
+
+R14      1        1          pas      GPIO26
+         2        2          pas      N$19
+
+R15      1        1          pas      GND
+         2        2          pas      GPIO5
+
+R16      1        1          pas      GND
+         2        2          pas      GPIO6
+
+R17      1        1          pas      GND
+         2        2          pas      GPIO13
+
+R18      1        1          pas      GND
+         2        2          pas      GPIO19
+
+R19      1        1          pas      GND
+         2        2          pas      GPIO26
+
+R20      A        A          pas      +5V_04
+         E        E          pas      GND
+         S        S          pas      VO
+
+S1       1        1          pas      N$9
+         2        2          pas               *** unconnected ***
+         3        3          pas      +3.3V_17
+         4        4          pas               *** unconnected ***
+
+S2       1        1          pas      N$10
+         2        2          pas               *** unconnected ***
+         3        3          pas      +3.3V_17
+         4        4          pas               *** unconnected ***
+
+S3       1        1          pas      N$8
+         2        2          pas               *** unconnected ***
+         3        3          pas      +3.3V_17
+         4        4          pas               *** unconnected ***
+
+SV1      1        1          pas      +3.3V_01
+         2        2          pas      +5V_02
+         3        3          pas      I2C_SDA
+         4        4          pas      +5V_04
+         5        5          pas      I2C_SCL
+         6        6          pas      GND
+         7        7          pas               *** unconnected ***
+         8        8          pas      TXD0
+         9        9          pas      GND
+         10       10         pas      RXD0
+         11       11         pas      GPIO17
+         12       12         pas      DB7
+         13       13         pas      GPIO27
+         14       14         pas      GND
+         15       15         pas      GPIO22
+         16       16         pas      DB6
+         17       17         pas      +3.3V_17
+         18       18         pas      DB5
+         19       19         pas      GPIO10
+         20       20         pas      GND
+         21       21         pas      GPIO9
+         22       22         pas      DB4
+         23       23         pas      GPIO11
+         24       24         pas      DB3
+         25       25         pas      GND
+         26       26         pas      DB2
+         27       27         pas               *** unconnected ***
+         28       28         pas               *** unconnected ***
+         29       29         pas      GPIO5
+         30       30         pas      GND
+         31       31         pas      GPIO6
+         32       32         pas      DB1
+         33       33         pas      GPIO13
+         34       34         pas      GND34
+         35       35         pas      GPIO19
+         36       36         pas      DB0
+         37       37         pas      GPIO26
+         38       38         pas      E
+         39       39         pas      GND
+         40       40         pas      RS
+
+SV2      1        1          pas      GND
+         2        2          pas      I2C_SCL
+         3        3          pas      I2C_SDA
+         4        4          pas      +3.3V_01
+
+SV3      1        1          pas      GND
+         2        2          pas      I2C_SCL
+         3        3          pas      I2C_SDA
+         4        4          pas      +3.3V_01
+
+SV4      1        1          pas      TXD0
+         2        2          pas      RXD0
+         3        3          pas      GND
+
+SV5      1        1          pas      GND
+         2        2          pas      I2C_SCL
+         3        3          pas      I2C_SDA
+         4        4          pas      +3.3V_01
+
+SV6      1        1          pas      GND
+         2        2          pas      I2C_SCL
+         3        3          pas      I2C_SDA
+         4        4          pas      +3.3V_01
+
+SV7      1        1          pas      +5V_04
+         2        2          pas      GND
+         3        3          pas      VO
+         4        4          pas      RS
+         5        5          pas      GND34
+         6        6          pas      E
+         7        7          pas      DB0
+         8        8          pas      DB1
+         9        9          pas      DB2
+         10       10         pas      DB3
+         11       11         pas      DB4
+         12       12         pas      DB5
+         13       13         pas      DB6
+         14       14         pas      DB7
+
+SW1      1        1          pas      +3.3V_17
+         2        2          pas      +3.3V_17
+         3        3          pas      +3.3V_17
+         4        4          pas      +3.3V_17
+         5        5          pas      +3.3V_17
+         6        6          pas      N$15
+         7        7          pas      N$13
+         8        8          pas      N$14
+         9        9          pas      N$18
+         10       10         pas      N$19
+
