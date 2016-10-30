@@ -1,6 +1,8 @@
-# rpi3-simple-hat
+# 40-pin RPis Simple Hats
 
-A Simple Hat for Raspberry Pi 3 Model B.
+Simple Hats for 40-pin Raspbery Pi models.
+
+## GPIO_LCD_HD44780
 
 This hat includes the following devices:
 
@@ -11,4 +13,11 @@ This hat includes the following devices:
 5. one HD44780-compatible LCD interface.
 6. one CPU fan connector.
 7. one UART bus pin header.
+
+## I2C_LCD_
+ 
+This hat includes the following devices:
+
+1. T.B.D.
+
 
