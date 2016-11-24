@@ -14,10 +14,11 @@ This hat includes the following devices:
 6. one CPU fan connector.
 7. one UART bus pin header.
 
-## I2C_LCD_
+## HW-PWMx2
  
-This hat includes the following devices:
+This hat includes the following interfaces:
 
-1. T.B.D.
+1. Two hardware PWM controlled servo motor connectors.
+2. A CPU fan connector.
 
 
