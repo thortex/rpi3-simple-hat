@@ -8,7 +8,7 @@
 必要な部品は二つだけです。本体とコネクターです。
 
 * http://akizukidenshi.com/catalog/g/gK-09991/
-* http://akizukidenshi.com/catalog/g/gC-09734/
+* http://akizukidenshi.com/catalog/g/gC-09731/
 
 ## 接続方法
 
