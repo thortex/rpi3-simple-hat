@@ -14,7 +14,7 @@
 
 本体側は赤枠のピンに青、緑、黄、橙、赤、茶の順番で接続します。
 
-[本体](https://raw.githubusercontent.com/thortex/rpi3-simple-hat/master/AKIZUKI-GPS/images/Pi-GPIO-header-26-sm.png "本体側")
+![本体](https://raw.githubusercontent.com/thortex/rpi3-simple-hat/master/AKIZUKI-GPS/images/Pi-GPIO-header-26-sm.png "本体側")
 
 RPi1b, RPi2, RPi3, RPi0, RPi0W で共通のピン配置のはずです。
 RPi1 の Rev. 1 だけは Pin 4 に +5V が来ていないかもしれません。
@@ -22,7 +22,7 @@ RPi1 の Rev. 1 だけは Pin 4 に +5V が来ていないかもしれません�
 GPS 側は 5V, GND, RxD, TxD, 1PPS に青、緑、黄、橙、赤、茶の順番で接続します。
 茶のピンは使用（接続）しません。
 
-[全体](https://raw.githubusercontent.com/thortex/rpi3-simple-hat/master/AKIZUKI-GPS/images/overview.jpg "全体")
+![全体](https://raw.githubusercontent.com/thortex/rpi3-simple-hat/master/AKIZUKI-GPS/images/overview.jpg "全体")
 
 ## ソフトウェア
 
