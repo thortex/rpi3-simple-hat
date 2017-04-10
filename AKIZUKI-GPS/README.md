@@ -217,6 +217,16 @@ apt-get で navit と maptool を指定します。
 
      sudo apt-get install maptool navit
 
+## フォント設定
+
+デフォルトの状態だとフォントは Liberation Sans が選択されていますので、
+日本語フォントに変更します。    
+
+    $ sudo apt-get install fonts-takao fonts-takao-gothic
+    $ cp /etc/navit/navit.xml ~/.navit/
+    $ cd ~/.navit/
+    $ perl -pi.bak -e 's/<(layout) (.*?) (font=.*?)>/<$1 $2>/; s/<(layout) (.*?)>/<$1 $2 font="TakaoGothic">/;' navit.xml
+
 ## 地図データのダウンロード
 
 地図は OpenStreetMap データが使用可能です。
@@ -236,20 +246,50 @@ http://maps3.navit-project.org/ のサイトで
 「Get map!」ボタンをクリックする事で navit 用の地図ファイルを
 ダウンロード可能です。
 
-## フォント設定
+CLI から直接矩形領域を指定してダウンロードする事も可能です。
 
-デフォルトの状態だとフォントは Liberation Sans が選択されていますので、
-日本語フォントに変更します。    
+     $ cd ~/navit
+     $ wget -O japan-all.bin -c 'http://maps3.navit-project.org/api/map/?bbox=117.6,20.5,151.3,47.1'
 
-    $ cp /etc/navit/navit.xml ~/.navit/
-    $ cd ~/.navit/
-    $ sed -i TBD
+ダウンロードしたファイルは japan-all.bin として ~/navit 配下に保存されていると
+仮定します。
 
-TBD 
+OpenStreetMaps の地図情報を有効にするため、~/.navit/navit.xml を編集します。
+
+     $ vi ~/.navit/navit.xml
+
+以下の行を探します。
+
+      <!-- Mapset template for openstreetmaps -->
+       <mapset enabled="no">
+        <map type="binfile" enabled="yes" data="/media/mmc2/MapsNavit/osm_europe.bin"/>
+       </mapset>
+
+以下のように書き換えます。
+
+      <!-- Mapset template for openstreetmaps -->
+       <mapset enabled="yes">
+        <map type="binfile" enabled="yes" data="/home/pi/navit/japan-all.bin"/>
+       </mapset>
 
 ## 起動
 
+デスクトップマネージャーのアプリケーションメニューにも Navit が追加されて
+いると思います。Navit のアイコンをクリックするだけで起動可能だと思います。
+この場合、~/.navit 配下の navit.xml を /etc 側にコピーすると、設定が
+システム全体に反映されます。
 
+     $ sudo cp ~/.navit/navit.xml /etc/navit/
+
+ターミナルから起動する場合は、以下のように設定ファイルを指定して起動する
+ことが可能です。
+
+     $ navit -c ~/.navit/navit.xml
+
+日本語フォントが文字化けし、正常に表示されない場合は、暫定対処として
+LANG を変更する方法があります。
+
+     $ (LANG=C navit -c ~/.navit/navit.xml)
 
 
 
