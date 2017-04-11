@@ -272,6 +272,21 @@ OpenStreetMaps の地図情報を有効にするため、~/.navit/navit.xml を�
         <map type="binfile" enabled="yes" data="/home/pi/navit/japan-all.bin"/>
        </mapset>
 
+無効な mapset が enabled になっていると、正常に地図情報が表示できないため、
+デフォルトの navit.xml で enabled が "yes" になっている mapset を
+disabled にします。
+
+               <mapset enabled="yes">
+                       <xi:include href="$NAVIT_SHAREDIR/maps/*.xml"/>
+               </mapset>
+
+以下のようにします。
+
+               <mapset enabled="no">
+                       <xi:include href="$NAVIT_SHAREDIR/maps/*.xml"/>
+               </mapset>
+
+
 ## 起動
 
 デスクトップマネージャーのアプリケーションメニューにも Navit が追加されて
@@ -287,9 +302,27 @@ OpenStreetMaps の地図情報を有効にするため、~/.navit/navit.xml を�
      $ navit -c ~/.navit/navit.xml
 
 日本語フォントが文字化けし、正常に表示されない場合は、暫定対処として
-LANG を変更する方法があります。
+LANG を変更する方法があります（メニュー類は英語になりますが…）。
 
      $ (LANG=C navit -c ~/.navit/navit.xml)
+
+
+
+## GUI の変更
+
+デフォルトだと internal GUI が選択されますが、GTK+ GUI の I/F を表示
+したければ、追加で以下のパッケージをインストールし、navit.xml で
+gui の選択を行います。
+
+     $ sudo apt-get install navit-gui-gtk
+
+## ボタン類の表示
+
+デフォルト設定でinternal に GUI を選択していると、ボタン類が表示されませんので、
+
+     <osd enabled="no"
+
+という行を "yes" に変更することで、操作ボタン類が表示されるようになります。
 
 
 
