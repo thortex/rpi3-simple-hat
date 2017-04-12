@@ -225,7 +225,12 @@ apt-get で navit と maptool を指定します。
     $ sudo apt-get install fonts-takao fonts-takao-gothic
     $ cp /etc/navit/navit.xml ~/.navit/
     $ cd ~/.navit/
-    $ perl -pi.bak -e 's/<(layout) (.*?) (font=.*?)>/<$1 $2>/; s/<(layout) (.*?)>/<$1 $2 font="TakaoGothic">/;' navit.xml
+    $ perl -pi.bak -e 's/<(layout) (.*?) (font=.*?)>/<$1 $2>/; s/<(layout) (.*?)>/<$1 $2 font="Takaoゴシック">/;' navit.xml
+
+フォント名は LANG に合わせる必要があります。LANG=C の場合は、"Takao Gochic"
+や "TakaoGothic"、LANG=ja_JP.UTF-8 の場合は fontconfig 上でのフォント名が
+"Takaoゴシック" になります。
+
 
 ## 地図データのダウンロード
 
@@ -300,13 +305,6 @@ disabled にします。
 ことが可能です。
 
      $ navit -c ~/.navit/navit.xml
-
-日本語フォントが文字化けし、正常に表示されない場合は、暫定対処として
-LANG を変更する方法があります（メニュー類は英語になりますが…）。
-
-     $ (LANG=C navit -c ~/.navit/navit.xml)
-
-
 
 ## GUI の変更
 
