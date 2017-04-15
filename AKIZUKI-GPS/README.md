@@ -322,6 +322,42 @@ gui の選択を行います。
 
 という行を "yes" に変更することで、操作ボタン類が表示されるようになります。
 
+## 日本語化
+
+日本人の開発者が少ないのか、メッセージの日本語化が十分ではありません。
+
+本家に PR しているので、取り込まれる可能性はありますが、
+私家版の日本語化メッセージファイルを以下に配置しています。
+
+https://github.com/thortex/navit/raw/thortex/thortex/navit.mo
+
+日本語化ファイルの差し替え手順は以下です。
+まず、オリジナルのファイルを .old に修正しておきます。
+
+     $ sudo mv /usr/share/locale/ja/LC_MESSAGES/navit.mo \
+               /usr/share/locale/ja/LC_MESSAGES/navit.mo.old
+
+私家版日本語化ファイルをダウンロードします。
+
+     $ wget https://github.com/thortex/navit/raw/thortex/thortex/navit.mo
+
+コピーします。
+
+     $ sudo cp navit.mo /usr/share/locale/ja/LC_MESSAGES/navit.mo
+
+自分で好きなように日本語化する事が可能です。
+
+po/ja.po.in ファイルか thortex/ja.po.in ファイルを編集し、msgfmt
+コマンドでバイナリに変換します。
+
+     $ msgfmt -o navit.mo ja.po.in
+
+元になるファイルは本家の github か以下に存在します。
+
+https://github.com/thortex/navit/tree/thortex/thortex
+
+
+
 
 
 
