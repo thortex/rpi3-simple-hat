@@ -223,6 +223,7 @@ apt-get で navit と maptool を指定します。
 日本語フォントに変更します。    
 
     $ sudo apt-get install fonts-takao fonts-takao-gothic
+    $ mkdir -p ~/.navit/
     $ cp /etc/navit/navit.xml ~/.navit/
     $ cd ~/.navit/
     $ perl -pi.bak -e 's/<(layout) (.*?) (font=.*?)>/<$1 $2>/; s/<(layout) (.*?)>/<$1 $2 font="Takaoゴシック">/;' navit.xml
@@ -238,7 +239,7 @@ apt-get で navit と maptool を指定します。
 http://download.geofabrik.de/asia/japan.html のサイトから japan-latest.osm.bz2
 をダウンロードし、maptool で navit 用ファイルに変換する方法があります。
 
-     $ mkdir ~/navit
+     $ mkdir -p ~/navit
      $ cd ~/navit
      $ wget -c http://download.geofabrik.de/asia/japan-latest.osm.bz2
      $ bzcat japan-latest.osm.bz2 | maptool -S 100000000 japan.bin
