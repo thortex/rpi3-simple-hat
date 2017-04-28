@@ -358,6 +358,33 @@ po/ja.po.in ファイルか thortex/ja.po.in ファイルを編集し、msgfmt
 https://github.com/thortex/navit/tree/thortex/thortex
 
 
+## Navit Configurator
+
+navit.xml を編集する GUI ツールとして Navit Configurator があります。
+
+* http://wiki.navit-project.org/index.php/NavitConfigurator
+
+Wiki に記載されている手順は古いので、そのまま手順を実行するとエラーになります。
+
+* https://sourceforge.net/p/navitconfigurat/wiki/Wiki%20for%20NavitConfigurator/
+* https://sourceforge.net/p/navitconfigurat/wiki/Wiki%20for%20NavitConfigurator/#compile-and-install-navitconfigurator-from-source
+
+2017年現在、Jessie では以下のような手順でビルドすると成功します。
+
+     $ udo apt-get install qtbase5-dev qttools5-dev-tools libqt5webkit5-dev qt5-qmake qt5-default
+     $ git clone http://git.code.sf.net/p/navitconfigurat/code navitconfigurat-code
+     $ cd navitconfigurat-code
+     $ qmake
+     $ make
+     $ sudo checkinstall
+
+または
+
+     $ sudo make install
+
+qmake の Qt バージョンが 4.x.x 系ではなく 5.x.x 系になっている事が必要です。
+
+
 
 
 
